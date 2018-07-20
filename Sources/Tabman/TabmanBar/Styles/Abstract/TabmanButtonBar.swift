@@ -237,6 +237,8 @@ internal class TabmanButtonBar: TabmanBar {
             // appearance
             button.titleLabel?.adjustsFontSizeToFitWidth = true
             button.titleLabel?.font = self.textFont
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
             
             // layout
             button.set(.height, to: Defaults.minimumItemHeight, priority: UILayoutPriority(500))
